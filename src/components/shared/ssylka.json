@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_ssylka",
+  "info": {
+    "displayName": "Ссылка"
+  },
+  "options": {},
+  "attributes": {
+    "Link": {
+      "type": "string",
+      "required": true
+    },
+    "IsExternal": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "config": {}
+}

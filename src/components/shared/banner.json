@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_banner",
+  "info": {
+    "displayName": "Баннер"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Link": {
+      "type": "component",
+      "component": "shared.ssylka",
+      "repeatable": false,
+      "required": true
+    }
+  },
+  "config": {}
+}
