@@ -6,7 +6,7 @@
   "locale": null,
   "permissions": [
     {
-      "documentId": "tswamsvfy67jdno6zybpx67o",
+      "documentId": "wichfoi2ey95odx3bb5rxpce",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::o-nas.o-nas",
@@ -16,40 +16,43 @@
           "Content"
         ],
         "locales": [
-          "en"
+          "en",
+          "ru-RU"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "jj6kspctq55vhbbldr7l5q08",
+      "documentId": "y66da3qvyvtfgdlci67c3q7c",
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
       "subject": "api::o-nas.o-nas",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "ru-RU"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "alo18c6tlm8rked6eswn5avy",
+      "documentId": "wiewcmioah92gqlromzxdbwq",
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
       "subject": "api::o-nas.o-nas",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "ru-RU"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "w5kly0pth6kgiwkx1qln8560",
+      "documentId": "b3m5gmdcwyq85v6t7cn1d35b",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::o-nas.o-nas",
@@ -59,14 +62,15 @@
           "Content"
         ],
         "locales": [
-          "en"
+          "en",
+          "ru-RU"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "nxld1lcl8dcfi9swlucqwa7k",
+      "documentId": "gpkdo37ndk96s1rg15aarsew",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::o-nas.o-nas",
@@ -76,7 +80,8 @@
           "Content"
         ],
         "locales": [
-          "en"
+          "en",
+          "ru-RU"
         ]
       },
       "conditions": [],
