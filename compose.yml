@@ -1,0 +1,20 @@
+services:
+  strapi:
+    image: nuxtie-strapi:latest
+    container_name: nuxtie-strapi
+    build:
+      context: .
+      dockerfile: dockerfile
+
+    networks: ["pg_net"]
+    ports:
+      - 1337:1337
+    profiles: ["root", "strapi", "nuxtie-strapi"]
+    volumes:
+      - /opt/nuxtie-strapi/uploads:/app/public/uploads
+    env_file: .env
+    restart: unless-stopped
+
+networks:
+  pg_net:
+    external: true

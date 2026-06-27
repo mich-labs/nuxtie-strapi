@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_tekstovyj_blok",
+  "info": {
+    "displayName": "Текстовый Блок"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
