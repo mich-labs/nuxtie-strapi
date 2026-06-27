@@ -18,6 +18,7 @@ jobs:
 
           HOST=${{ secrets.HOST }}
           PORT=${{ secrets.PORT }}
+          PUBLIC_URL=${{ secrets.PUBLIC_URL }}
 
           APP_KEYS=${{ secrets.APP_KEYS }}
           API_TOKEN_SALT=${{ secrets.API_TOKEN_SALT }}
