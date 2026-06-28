@@ -5,11 +5,11 @@
   },
   "options": {},
   "attributes": {
-    "Link": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "IsExternal": {
+    "isExternal": {
       "type": "boolean",
       "required": true,
       "default": true

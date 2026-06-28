@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_widgets_banner_sekcziya",
+  "info": {
+    "displayName": "Баннер секция"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "maxLength": 350,
+      "required": true
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.ssylka",
+      "repeatable": false,
+      "required": true
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "smallImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  },
+  "config": {}
+}

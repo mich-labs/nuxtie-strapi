@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_widgets_slajder",
+  "info": {
+    "displayName": "Слайдер"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.ssylka",
+      "repeatable": false,
+      "required": true
+    },
+    "banner": {
+      "type": "component",
+      "component": "shared.banner",
+      "repeatable": true,
+      "required": true,
+      "min": 1,
+      "max": 8
+    }
+  },
+  "config": {}
+}

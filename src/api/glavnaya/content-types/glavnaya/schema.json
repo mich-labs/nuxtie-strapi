@@ -1,0 +1,72 @@
+{
+  "kind": "singleType",
+  "collectionName": "glavnayas",
+  "info": {
+    "singularName": "glavnaya",
+    "pluralName": "glavnayas",
+    "displayName": "Главная"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": false,
+      "required": true
+    },
+    "slider": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "widgets.slajder",
+      "repeatable": false,
+      "required": true
+    },
+    "bannerSection1": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "widgets.banner-sekcziya",
+      "repeatable": false,
+      "required": true
+    },
+    "bannerSection2": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "widgets.banner-sekcziya",
+      "repeatable": false,
+      "required": true
+    }
+  }
+}
