@@ -528,7 +528,7 @@ export interface ApiONasONas extends Struct.SingleTypeSchema {
     };
   };
   attributes: {
-    Content: Schema.Attribute.DynamicZone<['shared.tekstovyj-blok']> &
+    content: Schema.Attribute.DynamicZone<['shared.tekstovyj-blok']> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -540,7 +540,14 @@ export interface ApiONasONas extends Struct.SingleTypeSchema {
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::o-nas.o-nas'>;
     publishedAt: Schema.Attribute.DateTime;
-    Title: Schema.Attribute.String &
+    seo: Schema.Attribute.Component<'shared.seo', false> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
