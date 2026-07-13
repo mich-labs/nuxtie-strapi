@@ -46,25 +46,25 @@
       "repeatable": false,
       "required": true
     },
-    "bannerSection1": {
+    "promoSection1": {
       "type": "component",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "widgets.banner-sekcziya",
+      "component": "widgets.promo-sekcziya",
       "repeatable": false,
       "required": true
     },
-    "bannerSection2": {
+    "promoSection2": {
       "type": "component",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "widgets.banner-sekcziya",
+      "component": "widgets.promo-sekcziya",
       "repeatable": false,
       "required": true
     }

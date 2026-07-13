@@ -19,7 +19,7 @@
       "repeatable": false,
       "required": true
     },
-    "banner": {
+    "banners": {
       "type": "component",
       "component": "shared.banner",
       "repeatable": true,

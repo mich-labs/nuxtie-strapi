@@ -49,10 +49,10 @@ export interface SharedTekstovyjBlok extends Struct.ComponentSchema {
   };
 }
 
-export interface WidgetsBannerSekcziya extends Struct.ComponentSchema {
-  collectionName: 'components_widgets_banner_sekcziya';
+export interface WidgetsPromoSekcziya extends Struct.ComponentSchema {
+  collectionName: 'components_widgets_promo_sekcziya';
   info: {
-    displayName: '\u0411\u0430\u043D\u043D\u0435\u0440 \u0441\u0435\u043A\u0446\u0438\u044F';
+    displayName: '\u041F\u0440\u043E\u043C\u043E \u0441\u0435\u043A\u0446\u0438\u044F';
   };
   attributes: {
     content: Schema.Attribute.Text &
@@ -76,7 +76,7 @@ export interface WidgetsSlajder extends Struct.ComponentSchema {
     displayName: '\u0421\u043B\u0430\u0439\u0434\u0435\u0440';
   };
   attributes: {
-    banner: Schema.Attribute.Component<'shared.banner', true> &
+    banners: Schema.Attribute.Component<'shared.banner', true> &
       Schema.Attribute.Required &
       Schema.Attribute.SetMinMax<
         {
@@ -99,7 +99,7 @@ declare module '@strapi/strapi' {
       'shared.seo': SharedSeo;
       'shared.ssylka': SharedSsylka;
       'shared.tekstovyj-blok': SharedTekstovyjBlok;
-      'widgets.banner-sekcziya': WidgetsBannerSekcziya;
+      'widgets.promo-sekcziya': WidgetsPromoSekcziya;
       'widgets.slajder': WidgetsSlajder;
     }
   }
