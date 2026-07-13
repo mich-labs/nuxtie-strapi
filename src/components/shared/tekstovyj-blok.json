@@ -5,11 +5,12 @@
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Text": {
-      "type": "blocks"
+    "content": {
+      "type": "blocks",
+      "required": true
     }
   },
   "config": {}

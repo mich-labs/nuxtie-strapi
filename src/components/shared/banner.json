@@ -5,20 +5,20 @@
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Body": {
+    "content": {
       "type": "text"
     },
-    "Image": {
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
         "images"
       ]
     },
-    "Link": {
+    "link": {
       "type": "component",
       "component": "shared.ssylka",
       "repeatable": false,
