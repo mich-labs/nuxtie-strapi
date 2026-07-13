@@ -456,26 +456,6 @@ export interface ApiGlavnayaGlavnaya extends Struct.SingleTypeSchema {
     };
   };
   attributes: {
-    bannerSection1: Schema.Attribute.Component<
-      'widgets.banner-sekcziya',
-      false
-    > &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    bannerSection2: Schema.Attribute.Component<
-      'widgets.banner-sekcziya',
-      false
-    > &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -484,6 +464,20 @@ export interface ApiGlavnayaGlavnaya extends Struct.SingleTypeSchema {
       'oneToMany',
       'api::glavnaya.glavnaya'
     >;
+    promoSection1: Schema.Attribute.Component<'widgets.promo-sekcziya', false> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    promoSection2: Schema.Attribute.Component<'widgets.promo-sekcziya', false> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false> &
       Schema.Attribute.Required &
