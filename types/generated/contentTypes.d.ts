@@ -440,6 +440,111 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiDostavkaDostavka extends Struct.SingleTypeSchema {
+  collectionName: 'dostavkas';
+  info: {
+    displayName: '\u0414\u043E\u0441\u0442\u0430\u0432\u043A\u0430';
+    pluralName: 'dostavkas';
+    singularName: 'dostavka';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    content: Schema.Attribute.DynamicZone<['shared.tekstovyj-blok']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::dostavka.dostavka'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGarantiyaIOplataGarantiyaIOplata
+  extends Struct.SingleTypeSchema {
+  collectionName: 'garantiya_i_oplatas';
+  info: {
+    displayName: '\u0413\u0430\u0440\u0430\u043D\u0442\u0438\u044F \u0438 \u043E\u043F\u043B\u0430\u0442\u0430';
+    pluralName: 'garantiya-i-oplatas';
+    singularName: 'garantiya-i-oplata';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    content: Schema.Attribute.DynamicZone<['shared.tekstovyj-blok']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::garantiya-i-oplata.garantiya-i-oplata'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlavnayaGlavnaya extends Struct.SingleTypeSchema {
   collectionName: 'glavnayas';
   info: {
@@ -575,6 +680,7 @@ export interface ApiONasONas extends Struct.SingleTypeSchema {
   };
   attributes: {
     content: Schema.Attribute.DynamicZone<['shared.tekstovyj-blok']> &
+      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1117,6 +1223,8 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::dostavka.dostavka': ApiDostavkaDostavka;
+      'api::garantiya-i-oplata.garantiya-i-oplata': ApiGarantiyaIOplataGarantiyaIOplata;
       'api::glavnaya.glavnaya': ApiGlavnayaGlavnaya;
       'api::kontakty.kontakty': ApiKontaktyKontakty;
       'api::o-nas.o-nas': ApiONasONas;
