@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "o_nass",
+  "collectionName": "garantiya_i_oplatas",
   "info": {
-    "singularName": "o-nas",
-    "pluralName": "o-nass",
-    "displayName": "О нас"
+    "singularName": "garantiya-i-oplata",
+    "pluralName": "garantiya-i-oplatas",
+    "displayName": "Гарантия и оплата"
   },
   "options": {
     "draftAndPublish": true

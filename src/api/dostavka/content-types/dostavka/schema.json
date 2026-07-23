@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "o_nass",
+  "collectionName": "dostavkas",
   "info": {
-    "singularName": "o-nas",
-    "pluralName": "o-nass",
-    "displayName": "О нас"
+    "singularName": "dostavka",
+    "pluralName": "dostavkas",
+    "displayName": "Доставка"
   },
   "options": {
     "draftAndPublish": true
